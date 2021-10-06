@@ -40,7 +40,7 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/) to lea
 1) create 1 extra line in index.html with your name, github username.
 2) commit the code with message "hacktoberfest-accepted By Your Name"
 3) create the pull request
-4) Boom Your 1st PR is completed.
+4) Boom!.. Your 1st PR is completed.
 5) Thanks
 
 ## Conclusion
