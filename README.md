@@ -38,6 +38,7 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/) to lea
 # How to contribute?
 
 1) create 1 extra line in index.html with your name, github username.
+    example copy this line and paste it last <li> => <li class="list-group-item">Your Name <span class="badge">Your Github Username</span></li>
 2) commit the code with message "hacktoberfest-accepted" "
 3) create the pull request
 4) Boom Your 1st PR is completed.
