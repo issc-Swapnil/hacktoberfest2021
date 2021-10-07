@@ -39,8 +39,23 @@
       <li class="list-group-item ">Rohit Kothapalli <span class="badge ">Rohit</span> </li>
       <li class="list-group-item ">M Noman <span class="badge ">H-M-Noman123</span> </li>
       <li class="list-group-item ">Saumya Singh <span class="badge ">Saumya008</span> </li>
+      <li class="list-group-item ">Balamurugan <span class="badge ">balamurugan213</span> </li>
     </ul>
   </div>
+  
 </body>
+<script>
+  var li = document.querySelectorAll('.badge');
+  li.forEach((event)=>{
+    var name=event.innerText;
+    event.innerText="";
+    var linkElement = document.createElement("a"); 
+    linkElement.setAttribute("href", "https://github.com/"+name);
+    linkElement.setAttribute("target", "_blank"); 
+    linkElement.innerHTML = name;               
+    document.body.appendChild(linkElement);   
+    event.appendChild(linkElement)
+  }) 
+</script>
 
 </html>
