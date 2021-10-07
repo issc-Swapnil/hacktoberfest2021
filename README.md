@@ -33,13 +33,13 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/) to lea
 # Getting Started:
 - Register on [Hacktoberfest website](https://hacktoberfest.digitalocean.com)
 - Fork this repository
-- Add something innovatine web development divs in index.html and style.css
+- Add something innovative to the web development divs in index.html and style.css
 
 # How to contribute?
 
-1) create 1 extra line in index.html with your name, github username.
-2) commit the code with message "hacktoberfest-accepted By Your Name"
-3) create the pull request
+1) Create 1 extra line in index.html with your name, github username.
+2) Commit the code with message "hacktoberfest-accepted By Your Name"
+3) Create the pull request
 4) Boom!.. Your 1st PR is completed.
 5) Thanks
 
