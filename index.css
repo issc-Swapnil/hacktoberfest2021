@@ -2,3 +2,17 @@ html {
     background-color: aqua;
     border-radius: 100px;
 }
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.badge:hover{
+    background-color: rgb(83, 83, 83);
+}
