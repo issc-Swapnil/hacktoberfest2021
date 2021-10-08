@@ -8,7 +8,7 @@
 
 # What is Hacktoberfest?
 
-Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
+Hacktoberfest® is open to everyone in our global community. Whether you are a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
 
 - Hacktoberfest is a celebration open to everyone in our global community.
 - Pull requests can be made in any GitHub-hosted repositories/projects.
@@ -23,7 +23,7 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/) to lea
 
 # How is this repository different?
 
-- If you are contributing first time on github and you are finding projects/repositories tough to enter this will help you a lot if you know a little bit of HTML, CSS, Javascript
+- If you are contributing for the first time on github and you are finding projects/repositories tough to enter, this will help you a lot if you know a little bit of HTML, CSS and Javascript.
 
 - Our idea is to create contribute anything simple or complex you have build using HTML, CSS or javascript.
 
@@ -34,6 +34,7 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/) to lea
 - Register on [Hacktoberfest website](https://hacktoberfest.digitalocean.com)
 - Fork this repository
 - Add something innovative to the web development divs in index.html and style.css
+- You can also add CSS to make it look good.
 
 # How to contribute?
 
@@ -44,14 +45,14 @@ Read the [participation details](https://hacktoberfest.digitalocean.com/) to lea
 5) Thanks
 
 ## Conclusion
-Fun element to learning aspect of hacktoberfest! 
+Add fun element to learning aspect of hacktoberfest! 
 We hope you had fun doing the process and all the best for your projects!
 Big thank you to contribute in this project!
 
 ### License
 
-This repository is not linked with hacktoberfest in any way or means.
+- This repository is not linked with hacktoberfest in any way or means.
 
-This repository will only be used for learning and educational purposes.
+- This repository will only be used for learning and educational purposes.
 
 
