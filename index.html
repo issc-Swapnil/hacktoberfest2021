@@ -7,8 +7,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .progress-container {
+  width: 100%;
+  height: 4px;
+  background: #ccc;
+  position: fixed;
+  z-index: 1;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #04AA6D;
+  width: 0%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+  </style>
 </head>
 <body>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
 <div class="container">
   <h2>HacktoberFest 2021 Contributors list</h2>
   <ul class="list-group">
@@ -18,5 +57,16 @@
   </ul>
 </div>
 </ul>
+<script>
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {myFunction()};
+  
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
 </body>
 </html>
