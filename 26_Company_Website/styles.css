@@ -1,0 +1,186 @@
+body{
+    		font-family: 'EB Garamond', serif;
+    		margin: 0;
+    	}
+    	h1{
+    		font-family: 'Josefin Sans', sans-serif;
+    		font-size: 50px;
+    	}
+    	header h4{
+    		font-family: 'Titillium Web', sans-serif;
+    		font-size: 20px;
+    	}
+    	/*-----Header & Footer------*/
+    	header, footer{
+    		background-image: url(img/coding.gif);
+    		background-size: cover;
+    		color: white;
+    		padding: 10px;
+    		text-align: center;
+    	}
+    	/*------Main Navigation Bar------*/
+    	nav{
+    		background-color: #00197C;
+    		overflow: hidden;
+    	}
+    	nav ul{
+    		list-style-type: none;
+    		padding: 0;
+    		margin: 0;
+    	}
+    	nav ul li{
+    		float: left;
+    	}
+    	nav ul li a{
+    		text-decoration: none;
+    		color: white;
+    		padding: 10px 45px;
+    		display: inline-block;
+    		font-size: 20px;
+    	}
+    	nav ul li a:hover{
+    		background-color: #00C6EC;
+    	}
+    	nav ul li a.active{
+    		background-color: #00D6FF;
+    	}
+    	/*-------Sidebar Section-------*/
+    	aside{
+    		background-color: #B2F3FF;
+    		float: left;
+    		width: 200px;
+    		text-align: center;
+    	}
+    	aside ul{
+    		list-style-type: none;
+    		padding: 0;
+    		margin: 0;
+    		height: 400px;
+    		overflow-y: scroll;
+
+    	}
+    	aside ul li a{
+    		text-decoration: none;
+    		color: black;
+    		padding: 15px 25px;
+    		display: block;
+    		border: 1px solid gray;
+    	}
+    	aside ul li a:hover{
+    		background-color: #0048BA;
+    		color: white;
+    		font-size: 20px;
+    	}
+    	/*-------Main Content Section------*/
+    	section{
+    		margin-left: 200px;
+    		padding: 10px;
+    		border-left: 2px solid white;
+    		background-color: #10223F;
+    		color: white;
+    	}
+    	details{
+    		background-color: #2B589E;
+    		margin: 5px;
+    		padding: 10px;
+    		border-radius: 15px;
+    	}
+    	summary{
+    		outline: none;
+    	}
+    	article{
+    		background-color: #3D7CE1;
+    		color: black;
+    		padding: 10px;
+    		border-radius: 50px;
+    	}
+    	article p{
+    		margin-right: 200px;
+    	}
+        
+
+
+        /*index*/
+        #index_img{
+        	float: right;
+        	padding: 15px;
+            width: 500px;
+            height: 300px;
+        }
+
+
+
+        /*courses*/
+        #courses_img{
+            float: right;
+            padding: 15px;
+            width: 500px;
+            height: 300px;
+        }
+
+        /*projects*/
+        #project_img{
+            float: right;
+            padding: 15px;
+            width: 500px;
+            height: 300px;
+        }
+
+        /*career*/
+        #career_img{
+            float: right;
+            padding: 15px;
+            width: 500px;
+            height: 300px;
+        }
+        
+
+        /*contactus*/
+        #contactus_img{
+            width: 400px;
+            height: 175px;
+            float: right;
+            padding: 15px;
+        }
+
+
+        /*-----form-----*/
+        form{
+            background-color: #00C6EC;
+        }
+        td{
+            padding: 7px;
+        }
+        input{
+            height: 25px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+        textarea{
+            border-radius: 10px;
+            border: 1px solid;
+        }
+        input:focus, textarea:focus{
+            outline: none;
+            border: 1px solid blue;
+            box-shadow: 2px 2px 2px blue;
+        }
+        .button{
+            background-color: #0062FF;
+            font-size: 25px;
+            padding: 0px 25px;
+            border: none;
+            margin-bottom: 30px;
+        }
+        .button:hover{
+            cursor: pointer;
+            box-shadow: 5px 5px 5px blue;
+        }
+
+        #aboutjoinus{
+           margin-left: 0;
+        }
+
+        #contact_form{
+            margin-right: 300px;
+        }
