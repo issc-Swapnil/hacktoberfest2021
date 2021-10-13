@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Hacktober Fest 2021 Contributors</title>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#17285D" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <h3>Name: Vaishnavi Sharma</h3>
+    <h3>GitHub UserName: Vaishnavi-101</h3>
+  <div class="container">
+    <h2 class="text-center">HacktoberFest 2021 Contributors list</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Swapnil Patil <span class="badge">issc-Swapnil</span></li>
+      <li class="list-group-item">Shashi Shekhar <span class="badge">shashishekhar11</span></li>
+      <li class="list-group-item">Yogesh <span class="badge">yogesh2k21</span></li>
+      <li class="list-group-item">Naeema Bargir <span class="badge">Naeema21</span></li>
+      <li class="list-group-item">Muhammad Sami Khanday<span class="badge">m-samik</span></li>
+      <li class="list-group-item">Mohammed Ayman<span class="badge">mr-aymann</span></li>
+      <li class="list-group-item">Dustin M<span class="badge">snowyman</span></li>
+      <li class="list-group-item">Harsha Bajaj<span class="badge">bajajharsha</span></li>
+      <li class="list-group-item">Priyanshu Bhatt <span class="badge">Priyanshu-bhatt</span></li>
+      <li class="list-group-item ">Rohit Kothapalli <span class="badge ">Rohit</span> </li>
+      <li class="list-group-item ">M Noman <span class="badge ">H-M-Noman123</span> </li>
+      <li class="list-group-item ">Manish <span class="badge ">manish9823</span> </li>
+      <li class="list-group-item">Akshat Maheshwari <span class="badge ">akshatmaheshwari1702</span></li>
+      <li class="list-group-item ">Rohit Kothapalli <span class="badge ">Rohit</span> </li>
+      <li class="list-group-item ">M Noman <span class="badge ">H-M-Noman123</span> </li>
+      <li class="list-group-item ">Saumya Singh <span class="badge ">Saumya008</span> </li>
+      <li class="list-group-item ">Balamurugan <span class="badge ">balamurugan213</span> </li>
+      <li class="list-group-item ">Fawzaan Shaikh <span class="badge ">fawzaanshaikh</span> </li>
+      <li class="list-group-item ">Anup Kumar Maurya <span class="badge ">Anup-maurya</span> </li>
+      <li class="list-group-item ">Kratika Gupta <span class="badge ">kratikagupta2002</span> </li>
+      <li class="list-group-item ">Fawwaz Abdul Ghani <span class="badge ">Ghani280706</span> </li>    
+      <li class="list-group-item ">Palak Yadav <span class="badge ">palakyadav1807</span> </li>
+      <li class="list-group-item ">Tripti Rao <span class="badge ">Tripti19-Rao</span> </li>
+      <li class="list-group-item">Prakhar Agrawal <span class="badge">prakhartech</span></li>
+      <li class="list-group-item">Muhammad Erlangga <span class="badge">muhammaderlangga99</span> </li>
+	    <li class="list-group-item ">Ritesh Aldak <span class="badge ">RiteshAldak1302</span> </li>
+     <li class="list-group-item">KRITI PASHINE <span class="badge">Kriti-999</span></li>
+	    <li class="list-group-item">JATIN UPRETI <span class="badge">jatin-upreti</span></li>
+      <li class="list-group-item">Sairam Nomula <span class="badge">SairamNomula</span></li>
+    </ul>
+  </div>
+  
+<footer>
+  <div class="container">
+    <h1>welcome to my repository !</h1>
+    <p>Let's contribute to</p>
+    <img src="./img/68747470733a2f2f6861636b746f626572666573742e6469676974616c6f6365616e2e636f6d2f5f6e7578742f696d672f6c6f676f2d6861636b746f626572666573742d66756c6c2e663432653362312e737667.svg" width="300px" class="img-fluid" alt="">
+  </div>
+</footer>
+
+</body>
+<script>
+  var li = document.querySelectorAll('.badge');
+  li.forEach((event)=>{
+    var name=event.innerText;
+    event.innerText="";
+    var linkElement = document.createElement("a"); 
+    linkElement.setAttribute("href", "https://github.com/"+name);
+    linkElement.setAttribute("target", "_blank"); 
+    linkElement.innerHTML = name;               
+    document.body.appendChild(linkElement);   
+    event.appendChild(linkElement)
+  }) 
+</script>
+
+</html>
