@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<!--sivakshan-->
+<title>Class Test</title>
+
+
+<body>
+
+
+    <h1>Appending form details to a File</h1>
+
+    <form action="classtest.php" method="post">
+
+        First Name <input type="text" name="firstname"><br> Last Name <input type="text" name="lastname"><br> User Name <input type="text" name="username"><br> Password <input type="password" name="pwd"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <input type="submit" value="Submit" onclick="click()">
+
+
+
+        <br>
+
+
+        <h2>To Delete the file</h2><br>
+
+        <input type="button" name="delete" value="delete">
+
+        <br>
+
+        <h2>To retrieve the file</h2>
+        <input type="button" name="retrieve" value="retrieve">
+
+
+    </form>
+
+</body>
+
+</html>
