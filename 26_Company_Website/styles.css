@@ -144,7 +144,7 @@ body{
         }
 
 
-        /*-----form-----*/
+        /*-----form-----
         form{
             background-color: #00C6EC;
         }
@@ -179,8 +179,44 @@ body{
 
         #aboutjoinus{
            margin-left: 0;
-        }
+        } */
 
         #contact_form{
-            margin-right: 300px;
-        }
+           margin-right: 300px;
+        } 
+		#form {
+			display: flex;
+			flex-direction: column;
+			width: 70%;
+			margin-left: 5%;
+		
+		}
+		input[type="text"] {
+			padding: 10px;
+			border: 1px solid white;
+			border-radius: 14px;
+		}
+		select {
+			padding: 10px;
+			border: 1px solid white;
+			border-radius: 14px;
+		}
+		textarea {
+			padding: 7px;
+			border: 1px solid white;
+			border-radius: 14px;
+		}
+		#input-default {
+			margin-bottom: 15px;  
+		  }
+	    button {
+			  margin-left: 19%;
+			  padding: 10px 15px 10px 15px;
+			  border-radius: 10px;
+			  background-color: #00C6EC;
+			  border: none;
+		  }
+		button:hover{
+            cursor: pointer;
+            box-shadow: 3px 3px 5px blue;
+		}
