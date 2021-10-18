@@ -12,39 +12,40 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
     .progress-container {
-  width: 100%;
-  height: 4px;
-  background: #ccc;
-  position: fixed;
-  z-index: 1;
-}
+      width: 100%;
+      height: 4px;
+      background: #ccc;
+      position: fixed;
+      z-index: 1;
+    }
 
-.progress-bar {
-  height: 8px;
-  background: #f74700;
-  width: 0%;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 4px;
-}
+    .progress-bar {
+      height: 8px;
+      background: #f74700;
+      width: 0%;
+    }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 1px;
-}
+    /* width */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: red;
+      border-radius: 1px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b30000;
+    }
   </style>
   <link rel="stylesheet" href="index.css" />
 
@@ -53,11 +54,11 @@
 <body>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
-  </div>  
+  </div>
   <div class="container">
     <h2 class="text-center">HacktoberFest 2021 Contributors list</h2>
     <ul class="list-group">
-      
+
       <li class="list-group-item bg-light">Swapnil Patil <span class="badge">issc-Swapnil</span></li>
       <li class="list-group-item">Sivakshan <span class="badge">sivaksan</span></li>
       <li class="list-group-item">Shashi Shekhar <span class="badge">shashishekhar11</span></li>
@@ -79,7 +80,7 @@
       <li class="list-group-item ">Fawzaan Shaikh <span class="badge ">fawzaanshaikh</span> </li>
       <li class="list-group-item ">Anup Kumar Maurya <span class="badge ">Anup-maurya</span> </li>
       <li class="list-group-item ">Kratika Gupta <span class="badge ">kratikagupta2002</span> </li>
-      <li class="list-group-item ">Fawwaz Abdul Ghani <span class="badge ">Ghani280706</span> </li>    
+      <li class="list-group-item ">Fawwaz Abdul Ghani <span class="badge ">Ghani280706</span> </li>
       <li class="list-group-item ">Palak Yadav <span class="badge ">palakyadav1807</span> </li>
       <li class="list-group-item ">Tripti Rao <span class="badge ">Tripti19-Rao</span> </li>
       <li class="list-group-item">Prakhar Agrawal <span class="badge">prakhartech</span></li>
@@ -94,7 +95,7 @@
       <li class="list-group-item">Ashvini Patil <span class="badge">avnipatil</span></li>
       <li class="list-group-item">Vidya Agre <span class="badge">VidyaAG</span></li>
       <li class="list-group-item">Asit Sonawane <span class="badge">asitsonawane</span></li>
-      <li class="list-group-item">Sakhineti Praveena<span class="badge">SakhinetiPraveena</span></li>    
+      <li class="list-group-item">Sakhineti Praveena<span class="badge">SakhinetiPraveena</span></li>
       <li class="list-group-item">Muhammad Tabish<span class="badge">mtabishk</span></li>
       <li class="list-group-item">Sakhineti Praveena<span class="badge">SakhinetiPraveena</span></li>
       <li class="list-group-item">Ruben Falcao <span class="badge">Ruben Falcao </span></li>
@@ -102,41 +103,44 @@
       <li class="list-group-item">Raj Dutta<span class="badge">rajprogrammerbd</span></li>
       <li class="list-group-item">Sakhineti Praveena<span class="badge">SakhinetiPraveena</span></li>
       <li class="list-group-item"> Andreas<span class="badge">idna001</span></li>
+      <li class="list-group-item">Prince<span class="badge">GPrince00</span></li>
     </ul>
   </div>
-  
-<footer>
-  <div class="container">
-    <h1>welcome to my repository !</h1>
-    <p>Let's contribute to</p>
-    <img src="./img/68747470733a2f2f6861636b746f626572666573742e6469676974616c6f6365616e2e636f6d2f5f6e7578742f696d672f6c6f676f2d6861636b746f626572666573742d66756c6c2e663432653362312e737667.svg" width="300px" class="img-fluid" alt="">
-  </div>
-</footer>
+
+  <footer>
+    <div class="container">
+      <h1>welcome to my repository !</h1>
+      <p>Let's contribute to</p>
+      <img
+        src="./img/68747470733a2f2f6861636b746f626572666573742e6469676974616c6f6365616e2e636f6d2f5f6e7578742f696d672f6c6f676f2d6861636b746f626572666573742d66756c6c2e663432653362312e737667.svg"
+        width="300px" class="img-fluid" alt="">
+    </div>
+  </footer>
 </body>
 <script>
   var li = document.querySelectorAll('.badge');
-  li.forEach((event)=>{
-    var name=event.innerText;
-    event.innerText="";
-    var linkElement = document.createElement("a"); 
-    linkElement.setAttribute("href", "https://github.com/"+name);
-    linkElement.setAttribute("target", "_blank"); 
-    linkElement.innerHTML = name;               
-    document.body.appendChild(linkElement);   
+  li.forEach((event) => {
+    var name = event.innerText;
+    event.innerText = "";
+    var linkElement = document.createElement("a");
+    linkElement.setAttribute("href", "https://github.com/" + name);
+    linkElement.setAttribute("target", "_blank");
+    linkElement.innerHTML = name;
+    document.body.appendChild(linkElement);
     event.appendChild(linkElement)
-  }) 
+  })
 </script>
 
 <script>
   // When the user scrolls the page, execute myFunction 
-  window.onscroll = function() {myFunction()};
-  
+  window.onscroll = function () { myFunction() };
+
   function myFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
-  </script>
+</script>
 
 </html>
