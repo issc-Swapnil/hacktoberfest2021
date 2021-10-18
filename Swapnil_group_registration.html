@@ -1,0 +1,178 @@
+<!-- ISSC-SWAPNIL-GROUP FROM USING HTML CSS JAVASCRIPT -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION USING HTML CSS JAVASCRIPT</title>
+  <!-- css code -->
+    <style>
+        body {
+            background-image: url("https://th.bing.com/th/id/OIP.V_BH0J9fTEThX6aA5w6kmAHaE3?w=245&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .from-group {
+            text-align: center;
+            display: block;
+            padding: 3px;
+            margin: -4px auto;
+            margin-top: 2px;
+            width: 327px;
+            height: 21px;
+            border-radius: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            background-color: rgba(0, 0, 0, 0.699);
+            color: white;
+        }
+
+        .form {
+            text-align: center;
+            border-radius: 15px;
+            border-style: groove;
+            box-shadow: inset;
+            border-width: 2px;
+            padding: 20px;
+            padding-top: 2PX;
+            padding-bottom: 10PX;
+            width: 33%;
+            margin-bottom: 151px;
+            margin-right: auto;
+            margin-left: 401px;
+            margin-top: 9px;
+            font-size: 13PX;
+            font-weight: bold;
+            border-radius: 43px;
+            border-color: white;
+            background-color: rgba(0, 0, 0, 0.582);
+        }
+
+        .error {
+            color: rgb(255, 1, 1);
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: rgb(6, 1, 12);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 15px;
+            border: 3px solid rgb(245, 242, 242);
+            font-size: 14px;
+            cursor: pointer;
+            font-family: Verdana;
+        }
+
+        .btn:hover {
+            background-color: rgb(184, 171, 171);
+            transform: scaleX(1.3);
+        }
+    </style>
+    <!-- js code -->
+    <script>
+        //function for validation
+        function formValidation() {
+            var u_name = document.getElementById("username").value;
+            var u_phone = document.getElementById("no").value;
+            var u_mail = document.getElementById("email_id").value;
+            var u_pass1 = document.getElementById("password1").value;
+            var u_pass2 = document.getElementById("password2").value;
+            var reg_uname = /^[A-Za-z]{3,30}$/;
+            var reg_phone = /^[0-9]{10}$/;
+            var reg_mail = /^[A-Za-z0-9_.]+@+[A-Za-z]+.+[A-Za-z]{3,30}$/;
+            var reg_pass1=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+            //validate username
+            if (u_name == "") {
+                document.getElementById("name_err").innerHTML = "</br> &nbsp;*Please Fill this Feild*";
+                return false;
+            }
+            else if (reg_uname.test(u_name)) {
+                document.getElementById("name_err").innerHTML = "";
+            }
+            else {
+                document.getElementById("name_err").innerHTML = "</br> &nbsp;*Field must contain alphabets only*";
+                return false;
+            }
+           //validate phone number 
+            if (u_phone == "") {
+                document.getElementById("no_err").innerHTML = "</br> &nbsp;*Please Fill this Feild*";
+                return false;
+
+            }
+            else if (reg_phone.test(u_phone)) {
+                document.getElementById("no_err").innerHTML = "";
+            }
+            else {
+                document.getElementById("no_err").innerHTML = "</br> &nbsp;*Field must contain 10 digits *";
+                return false;
+            }
+            // validate email
+            if (u_mail == "") {
+                document.getElementById("email_err").innerHTML = "</br> &nbsp;*Please  Fill this Feild*";
+                return false;
+            }
+            else if (reg_mail.test(u_mail)) {
+                document.getElementById("email_err").innerHTML = "";
+            }
+            else {
+                document.getElementById("email_err").innerHTML = "</br> &nbsp;*Please  Fill this Feild*";
+                return false;
+            }
+
+            // checks for password by calling function
+            if (u_pass1 == "") {
+                document.getElementById("pass1_err").innerHTML = "</br> &nbsp;*Please Fill this Feild*";
+                return false;
+            }
+            else if (reg_pass1.test(u_pass1)) {
+                document.getElementById("pass1_err").innerHTML = "";
+            }
+            else {
+                document.getElementById("pass1_err").innerHTML = "</br> &nbsp;Password don't match the requirement <br/> (at least 1 upper and lower case alphabet ,at least 1 digit, at least 1 symbol,min length 8)";
+            
+                return false;
+            }
+            // for confirmation of password 
+            if (u_pass2 == "") {
+                document.getElementById("pass2_err").innerHTML = "</br> &nbsp;*Please Fill this Feild*";
+                return false;
+            }
+            else if (u_pass1 == u_pass2) {
+                document.getElementById("pass2_err").innerHTML = "";
+            }
+            else {
+                document.getElementById("pass2_err").innerHTML = "</br> &nbsp;*Password not Matched*";
+                return false;
+            }
+        }
+
+    </script>
+</head>
+<!-- html code -->
+<body>
+    <div class="form">
+        <form onsubmit='return formValidation()'>
+            <h2 style="color:rgb(215, 255, 211)">ISSC-SWAPNIL-GROUP REGISTRATION FORM </h2>
+            NAME :<input class="from-group" id='username' type='text' name=Your_name size=30>
+            <small id="name_err" class="error"></small><br /><br />
+            PHONE NO. :<input class="from-group" id='no' type="text" name=Your_no>
+            <small id="no_err" class="error"></small><br /><br />
+            EMAIL :<input class="from-group" id='email_id' type='text' name=Your_Email>
+            <small id="email_err" class="error"></small><br /><br />
+            CREATE PASSWORD :<input class="from-group" id='password1' type='password' name=Your_Password1>
+            <small id="pass1_err" class="error"></small><br /><br />
+            CONFIRM PASSWORD : <input class="from-group" id='password2' type='password' name=Your_Password2>
+            <small id="pass2_err" class="error"></small><br /><br />
+            <button class="btn" id="btn">SUBMIT</button>
+        </form>
+        <h3 style="color: rgb(209, 138, 138);">We Work For Your Doubts!</h3>
+    </div>
+   
+</body>
+</html>
+
