@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Hacktober Fest 2021 Contributors</title>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#17285D" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .progress-container {
+        width: 100%;
+        height: 4px;
+        background: #ccc;
+        position: fixed;
+        z-index: 1;
+      }
 
-<head>
+      .progress-bar {
+        height: 8px;
+        background: #f74700;
+        width: 0%;
+      }
 
-  <title>Hacktober Fest 2021 Contributors</title>
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#17285D" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    .progress-container {
-      width: 100%;
-      height: 4px;
-      background: #ccc;
-      position: fixed;
-      z-index: 1;
-    }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
 
-    .progress-bar {
-      height: 8px;
-      background: #f74700;
-      width: 0%;
-    }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 1px;
+      }
 
-    /* width */
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px grey;
-      border-radius: 10px;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: red;
-      border-radius: 1px;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #b30000;
-    }
-  </style>
-  <link rel="stylesheet" href="index.css" />
-
-</head>
-
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+      }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 <body>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
@@ -108,12 +102,14 @@
       <li class="list-group-item">Om<span class="badge">omkolte17</span></li>
       <li class="list-group-item">Atishay<span class="badge">jnatishay78</span></li>
       <li class="list-group-item">Ali Fahruddin<span class="badge">adinoid</span></li>
+      <li class="list-group-item">Andrew Cai<span class="badge">ChickenNoogit</span></li>
+      <li class="list-group-item">Maheep Kumar <span class="badge">MaheepK9</span></li>
+      <li class="list-group-item">Nauman <span class="badge">naumanahmad9</span></li>
     </ul>
   </div>
-
   <footer>
     <div class="container">
-      <h1>welcome to my repository !</h1>
+      <h1>Welcome to my repository !</h1>
       <p>Let's contribute to</p>
       <img
         src="./img/68747470733a2f2f6861636b746f626572666573742e6469676974616c6f6365616e2e636f6d2f5f6e7578742f696d672f6c6f676f2d6861636b746f626572666573742d66756c6c2e663432653362312e737667.svg"
@@ -139,12 +135,14 @@
   // When the user scrolls the page, execute myFunction 
   window.onscroll = function () { myFunction() };
 
-  function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-  }
-</script>
-
+    function myFunction() {
+      var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
 </html>
