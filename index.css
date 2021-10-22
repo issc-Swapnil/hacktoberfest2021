@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-html {
-    background-color: aqua;
-    border-radius: 100px;
+
+body {
+    background-color: rgb(28, 29, 29);
+}
+.imgfluid{
+    margin-left: 420px;
+    margin-top: 20px;
+}
+.btnShine{
+  position: absolute;
+  margin-left: 560px;
+  transform: translate(-50%,-50%);
+  padding: 2px 8px;
+  color: white;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+}    
+@keyframes shine{
+  0% {background-position: 0px}
+  60%
+    {background-position: 180px}
+  100%
+    {background-position: 9px}
 }
 
 a {
@@ -45,4 +74,18 @@ footer .container {
 footer h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
+}
+
+.list-group{
+    margin-top: 45px;
+}
+
+li:hover{
+    background-color: rgb(40, 55, 70);
+   
+}
+
+.list-group-item:hover{
+    color: rgb(70, 214, 63); 
+    font-weight: bold;
 }
