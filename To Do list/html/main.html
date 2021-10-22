@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> To Do List</title>
+      <link rel="stylesheet" href="../CSS/Styles.css">      
+    </head>
+    <body>
+      <div class="conatiner">
+        <div class="header">
+          <div class="clear">
+            <button id="refresh">Remove all</button>
+          </div>          
+        </div> 
+        <div class="content">
+          <fieldset>
+            <legend>To-Do list</legend>
+            <ul id="list" style="list-style-type:none;">
+              <li class="item">
+                <input type="checkbox" class="checkbox">
+                <label class="text" contenteditable="true">Task</label>
+                <span class="delete">x</span>
+              </li>
+            </ul>
+          </fieldset>  
+        </div>
+        <div class="additem">
+          <button id="add"> + </button>
+          <input type="text" id="input" placeholder="Add a to-do">
+        </div>  
+      </div>  
+      <script src="../JS/script.js"></script>
+    </body>
+</html>
