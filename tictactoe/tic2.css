@@ -1,0 +1,24 @@
+td {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 23, 243);
+    color: rgb(27, 0, 70);
+    line-height: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+button{
+    text-align: center;
+    margin: 3px;
+    background-color: rgb(251, 255, 0);
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.op{
+    text-align: center;
+}
