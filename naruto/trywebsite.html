@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap" rel="stylesheet">
+    <style>
+        
+        html {  
+             scroll-behavior: smooth;  
+            }   
+        .navbar{
+            background-color: rgb(0, 0, 0);
+            border-radius: 114px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin: 1px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            font-family: cursive;
+            font-size:25px;
+            list-style: none ;
+            margin: 20px 50px;        
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(255, 14, 14);
+        }
+        .navbar input{
+            border: 3px solid rgb(12, 62, 226);
+            padding: 7px 29px;
+            margin: 15px 30px;
+            border-radius: 30px;
+        }
+        .search{
+            margin: auto;
+            float: right;
+            color: white;            
+        }
+        .image{
+            width: 40px;
+            float: right;
+            margin: 14px -22px;
+        }
+        body{
+            background-image: url("1992591.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #FFFFFF;
+        }
+        
+        .videolan{
+            border: 3px solid rgb(241, 228, 149);
+            border-radius: 20px;
+            margin: 20px 20px 20px 20px;
+        }
+        .videolan2{
+            border: 3px solid rgb(241, 228, 149);
+            border-radius: 20px;
+            margin: 1000px 20px 20px 20px;
+        }
+        .container{
+            /* border: 4px solid green; */
+            margin: 1%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .headfiler{            
+            padding: 40px;
+            margin: 19px 134px;
+            color: #ffbb00;
+            font-family: system-ui;
+            text-align: center;
+            font-size: -webkit-xxx-large;
+            text-decoration: underline;
+            text-decoration-color: #FFFFFF;
+            margin-top: 100px;
+
+        }
+        .galhead{
+            font-size: 150px;
+            font-family: 'Source Code Pro', monospace;
+            color:rgb(81, 255, 0);
+            outline: 5px green;
+            stroke: azure;
+
+        }
+        .img1{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#gotopage">Tribute</a></li>
+                <li><a href="#gotopage2">Hokage</a></li>
+                <li><a href="#gotogallery">Gallery</a></li>
+                <li><a href="#">Audiotoggle</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+                <div>
+                    <img src="search-var-flat.png" alt="" srcset="" class="image">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <h1 CLASS= "headfiler">
+            THE TALE OF NARUTO UZUMAKI
+            <embed src="The tale of naruto uzumaki (online-audio-converter.com).mp3" loop="true" autostart="true" width="2" height="0">
+            </h1>
+    </div>
+    <div class="container">
+        <div>
+            <video width=1280 height=720 controls loop class="videolan2" id="gotopage2">
+                <source src="naruto2.mp4">
+            </video>
+        </div>
+        
+        <div > 
+            <video width=1280 height=720 controls class="videolan" id="gotopage">
+                <source src="naruto.mp4"> 
+            </video>
+        </div>
+    </div>
+    
+    
+    <div class="gallery" id="gotogallery">
+        <h1 class="galhead">PHOTO GALLERY</h1>
+        <img src="007f33f000a80cadd987d35009f8876f3944f7c5r1-720-888v2_uhq.jpg" alt="">
+        <img src="8011.jpg" alt="">
+        <img src="kakashi-hatake-featured-image.jpg" alt="">
+        <img src="9b9d6dc13c9899b2da9fa8c85b05e5e3.jpg" alt="" class="img1">
+
+    </div>
+</body>
+</html>
