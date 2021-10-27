@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+
+#box{
+    text-align: center;
+}
+
+.sel{
+    color: red;
+    background-color: rgb(202, 199, 199) !important;
+}
+
+#tab-switcher{
+    margin-top: 40px;
+}
+
+li > img{
+    height: 3rem;
+    text-align: center;
+}
