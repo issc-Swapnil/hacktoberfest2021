@@ -46,7 +46,6 @@
     <link rel="stylesheet" href="index.css" />
   </head>
 <body>
-
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>
@@ -128,35 +127,41 @@
       <li class="list-group-item">Praveen Kumar <span class="badge">pravee42</span></li>
       <li class="list-group-item">Sachindra Fernando <span class="badge">SachindraFernando</span></li>
        <li class="list-group-item">Dipesh Jaswani<span class="badge">Dipesh123-ux</span></li>
+      <li class="list-group-item">Shreyansh Mamgain<span class="badge">Shreyanshmmgn</span></li>
     </ul>
   </div>
-  <footer>
-    <div class="container">
-      <h1>Welcome to my repository !</h1>
-      <p>Let's contribute to</p>
-      <img
-        src="./img/68747470733a2f2f6861636b746f626572666573742e6469676974616c6f6365616e2e636f6d2f5f6e7578742f696d672f6c6f676f2d6861636b746f626572666573742d66756c6c2e663432653362312e737667.svg"
-        width="300px" class="img-fluid" alt="hacktoberfest2021">
-    </div>
-  </footer>
-</body>
-<script>
-  var li = document.querySelectorAll('.badge');
-  li.forEach((event) => {
-    var name = event.innerText;
-    event.innerText = "";
-    var linkElement = document.createElement("a");
-    linkElement.setAttribute("href", "https://github.com/" + name);
-    linkElement.setAttribute("target", "_blank");
-    linkElement.innerHTML = name;
-    document.body.appendChild(linkElement);
-    event.appendChild(linkElement)
-  })
-</script>
+    <footer>
+      <div class="container">
+        <h1>Welcome to my repository !</h1>
+        <p>Let's contribute to</p>
+        <img
+          src="./img/68747470733a2f2f6861636b746f626572666573742e6469676974616c6f6365616e2e636f6d2f5f6e7578742f696d672f6c6f676f2d6861636b746f626572666573742d66756c6c2e663432653362312e737667.svg"
+          width="300px"
+          class="img-fluid"
+          alt="hacktoberfest2021"
+        />
+      </div>
+    </footer>
+  </body>
+  <script>
+    var li = document.querySelectorAll(".badge");
+    li.forEach((event) => {
+      var name = event.innerText;
+      event.innerText = "";
+      var linkElement = document.createElement("a");
+      linkElement.setAttribute("href", "https://github.com/" + name);
+      linkElement.setAttribute("target", "_blank");
+      linkElement.innerHTML = name;
+      document.body.appendChild(linkElement);
+      event.appendChild(linkElement);
+    });
+  </script>
 
-<script>
-  // When the user scrolls the page, execute myFunction
-  window.onscroll = function () { myFunction() };
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      myFunction();
+    };
 
     function myFunction() {
       var winScroll =
