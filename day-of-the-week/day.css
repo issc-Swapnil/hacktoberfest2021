@@ -1,0 +1,14 @@
+﻿body
+{
+    background-color:black;
+    color:ghostwhite;
+    font-style:italic;
+    font-size:x-large;
+}
+#container{
+    margin-top:50px;
+    box-sizing:border-box;
+    background-color:cornflowerblue;
+    height:400px;
+    width:400px;
+ }
