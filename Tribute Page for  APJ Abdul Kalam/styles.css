@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1px;
+}
+ 
+header > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-decoration: underline;
+  font-size: 46px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.main-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+#pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  /* background-color: aqua; */
+}
+
+#caption {
+  /* display: inline; */
+  text-align: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.main {
+    margin-top: 50px;
+    background-color: rgba(243, 223, 197, 0.253);
+    padding:10px;
+    line-height: 200%;
+    
+}
+
+.intro{
+    text-align: left;
+    font-size: 34px;
+    padding:10px;
+    margin-top: 30px;
+}
+
+.foot{
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+.foot > a{
+    margin:20px;
+    font-size: 30px;
+    color: black;
+}
+
+.medium{
+    padding-top: 10px;
+    margin : 10px;
+
+}
+
+.medium > a{
+    text-decoration: none;
+}
+
+.medium > a:hover{
+    color: rgb(255, 38, 0);
+}
+
+
+/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+@media screen and (min-width: 1200px) {
+    header > h1 {
+      font-size: 46px;
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    header > h1 {
+      font-size: 30px;
+    }
+  }
+
+/* .images-speech{
+    
+}
+ */
+
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    
+  }
+  
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.container1 {
+    padding: 2px 16px;
+  }
+
+
+ 
+  
