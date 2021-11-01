@@ -1,0 +1,30 @@
+body
+{
+    background:url("night.jpg");
+    background-size: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: seashell;
+}
+.circle
+{
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border : solid 7px seashell;
+    transform: translateY(-3px);
+}
+.hand
+{
+    width: 50%;
+    height: 3px;
+    background: seashell;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
